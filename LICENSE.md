@@ -2,7 +2,7 @@ MIT License
 
 Copyright (C) 2015-2017 MyEtherWallet INC
 
-Modifications Copyright (C) 2018 b0x, LLC
+Modifications Copyright (C) 2018 bZeroX, LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
