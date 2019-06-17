@@ -35,12 +35,12 @@
 
 <section class="bg-gradient header-branding">
   <section class="container">
-    
+
 
         <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="MyEtherWallet" />
 		<div style="font-size: 25px; margin-left: 10px; font-family: monospace; margin-bottom: 5px;">(bZx Fork)</div>
         <p class="small visible-xs">3.21.07</p>
-    
+
     <div class="tagline">
 
     <span class="hidden-xs"></span>
@@ -158,7 +158,7 @@
   <a aria-hidden="true" ng-show="showLeftArrow" class="nav-arrow-left" ng-click="scrollLeft(100);" ng-mouseover="scrollHoverIn(true,2);" ng-mouseleave="scrollHoverOut()">&#171;</a>
   <div class="nav-scroll">
     <ul class="nav-inner">
-      
+
       <li ng-repeat="tab in tabNames track by $index" \
           class="nav-item {{tab.name}}" \
           ng-class="{active: $index==gService.currentTab}"
@@ -257,7 +257,7 @@
     </section>
   </section>
 </article>
- 
+
 
 
 </header>
@@ -291,8 +291,8 @@
       </h1>
     </div>
     <div ng-show="!wd">
-        
-          <wallet-decrypt-drtv></wallet-decrypt-drtv>         
+
+          <wallet-decrypt-drtv></wallet-decrypt-drtv>
     </div>
   </article>
 
@@ -378,7 +378,7 @@
                  class="form-control"
                  placeholder="{{ 'SEND_amount_short' | translate }}"
                  ng-model="tx.value"
-                 ng-disabled="false"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.value) ? 'is-valid' : 'is-invalid'"/>
 
           <div class="input-group-btn">
@@ -466,7 +466,7 @@
                placeholder="21000"
                ng-model="tx.gasLimit"
                ng-change="gasLimitChanged=true"
-               ng-disabled="false"
+               ng-disabled=""
                ng-class="Validator.isPositiveNumber(tx.gasLimit) ? 'is-valid' : 'is-invalid'" />
       </div>
     </section>
@@ -499,7 +499,7 @@
                  class="form-control"
                  placeholder="0x6d79657468657277616c6c65742e636f6d20697320746865206265737421"
                  ng-model="tx.data"
-                 ng-disabled="false"
+                 ng-disabled=""
                  ng-class="Validator.isValidHex(tx.data) ? 'is-valid' : 'is-invalid'"/>
 
         </div>
@@ -525,7 +525,7 @@
                  class="form-control"
                  placeholder="2"
                  ng-model="tx.nonce"
-                 ng-disabled="checkTxReadOnly"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.nonce) ? 'is-valid' : 'is-invalid'" />
 
         </div>
@@ -550,7 +550,7 @@
                  class="form-control"
                  placeholder="50"
                  ng-model="tx.gasPrice"
-                 ng-disabled="checkTxReadOnly"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.gasPrice) ? 'is-valid' : 'is-invalid'" />
 
         </div>
@@ -656,8 +656,8 @@
 
 </section>
 <!-- / Sidebar -->
- 
-    
+
+
 
      <article class="modal fade" id="sendTransaction" tabindex="-1">
   <section class="modal-dialog">
@@ -809,8 +809,8 @@
     </section>
   </section>
 </article>
- 
-    
+
+
   </article>
 
 
@@ -911,8 +911,8 @@
 
 </article>
 <!-- / Swap Init Panel -->
- 
-  
+
+
 
    <!-- Swap Start 2 -->
 <article class="swap-start" ng-show="showStage2">
@@ -973,8 +973,8 @@
 
 </article>
 <!-- / Swap Start 2 -->
- 
-  
+
+
 
    <article class="swap-order" ng-show="showStage3Btc || showStage3Eth">
 
@@ -1056,8 +1056,8 @@
         <h5 traslate="SWAP_unlock">Unlock your wallet to send ETH or Tokens directly from this page.</h5>
       </div>
       <div ng-show="!wd">
-            <wallet-decrypt-drtv></wallet-decrypt-drtv>         
-          
+            <wallet-decrypt-drtv></wallet-decrypt-drtv>
+
       </div>
     </section>
 
@@ -1146,7 +1146,7 @@
                  class="form-control"
                  placeholder="{{ 'SEND_amount_short' | translate }}"
                  ng-model="tx.value"
-                 ng-disabled="false"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.value) ? 'is-valid' : 'is-invalid'"/>
 
           <div class="input-group-btn">
@@ -1234,7 +1234,7 @@
                placeholder="21000"
                ng-model="tx.gasLimit"
                ng-change="gasLimitChanged=true"
-               ng-disabled="false"
+               ng-disabled=""
                ng-class="Validator.isPositiveNumber(tx.gasLimit) ? 'is-valid' : 'is-invalid'" />
       </div>
     </section>
@@ -1267,7 +1267,7 @@
                  class="form-control"
                  placeholder="0x6d79657468657277616c6c65742e636f6d20697320746865206265737421"
                  ng-model="tx.data"
-                 ng-disabled="false"
+                 ng-disabled=""
                  ng-class="Validator.isValidHex(tx.data) ? 'is-valid' : 'is-invalid'"/>
 
         </div>
@@ -1293,7 +1293,7 @@
                  class="form-control"
                  placeholder="2"
                  ng-model="tx.nonce"
-                 ng-disabled="checkTxReadOnly"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.nonce) ? 'is-valid' : 'is-invalid'" />
 
         </div>
@@ -1318,7 +1318,7 @@
                  class="form-control"
                  placeholder="50"
                  ng-model="tx.gasPrice"
-                 ng-disabled="checkTxReadOnly"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.gasPrice) ? 'is-valid' : 'is-invalid'" />
 
         </div>
@@ -1424,8 +1424,8 @@
 
 </section>
 <!-- / Sidebar -->
- 
-      
+
+
 
        <article class="modal fade" id="sendTransaction" tabindex="-1">
   <section class="modal-dialog">
@@ -1577,8 +1577,8 @@
     </section>
   </section>
 </article>
- 
-      
+
+
     </section>
   </article>
   <!-- / Swap CTA ETH -->
@@ -1599,8 +1599,8 @@
 
 
 </article>
- 
-  
+
+
 
 
   <section class="bity-contact text-center">
@@ -1697,8 +1697,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
 </article>
 <!-- / Step 1 -->
- 
-  
+
+
 
    <article class="block">
 
@@ -1807,7 +1807,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                class="form-control"
                placeholder="50"
                ng-model="gasPriceDec"
-               ng-disabled="checkTxReadOnly"
+               ng-disabled=""
                ng-class="Validator.isPositiveNumber(gasPriceDec) ? 'is-valid' : 'is-invalid'" />
         <div class="input-group-btn">
           <span class="dropdown dropdown-gprice" ng-cloak>
@@ -1892,8 +1892,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     <textarea class="form-control" placeholder="" readonly="readonly" rows="5" ng-model="signedTx"></textarea>
   </section>
 </article>
- 
-  
+
+
 
    <article class="row block">
 
@@ -1921,8 +1921,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </div>
 
 </article>
- 
-  
+
+
 
    <article class="modal fade" id="sendTransactionOffline" tabindex="-1">
   <section class="modal-dialog">
@@ -2012,8 +2012,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </section>
   </section>
 </article>
- 
-  
+
+
 
 </main>
 
@@ -2041,7 +2041,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   <!-- Interact Contracts -->
   <article class="row block" ng-show="visibility=='interactView'">
 
-     
+
 <!-- Address -->
 <section class="col-sm-6 clearfix">
   <div class="row">
@@ -2092,8 +2092,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 <section class="col-xs-12 clearfix">
   <button class="btn btn-primary" ng-click="initContract()" translate="x_Access"> ACCESS </button>
 </section>
- 
-    
+
+
 
   </article>
 
@@ -2354,8 +2354,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
 
 </section>
- 
-    
+
+
 
   </article>
 
@@ -2447,8 +2447,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </section>
 </article>
 
- 
-    
+
+
 
   </article>
   <!-- / Interact Contracts -->
@@ -2555,12 +2555,12 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </section>
   </section>
 </article>
- 
-  
+
+
 
 </section>
- 
-    
+
+
 
   </article>
   <!-- / Deploy Contract -->
@@ -2568,8 +2568,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   <!--wallet decrypt-->
   <article class="form-group"
            ng-show="(!wd && visibility=='deployView') || (!wd && visibility=='interactView' && contract.selectedFunc && !contract.functions[contract.selectedFunc.index].constant)">
-      
-        <wallet-decrypt-drtv></wallet-decrypt-drtv>         
+
+        <wallet-decrypt-drtv></wallet-decrypt-drtv>
   </article>
 
   <article class="col-xs-12" ng-show="contract.selectedFunc!=null && visibility=='interactView'">
@@ -2638,7 +2638,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                    ng-model="objENS.name"
                    ng-keyup="$event.keyCode==13 && checkName()"
                    ng-change="nameOnChange()"
-                   ng-disabled="objENS.nameReadOnly"
+                   ng-disabled=""
                    ng-class="Validator.isValidENSName(objENS.name) && objENS.name.indexOf('.') == -1 ? 'is-valid' : 'is-invalid'"/>
             <div class="input-group-btn"><a class="btn btn-default">.eth</a></div>
           </div>
@@ -2804,8 +2804,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </div>
 
 </article>
- 
-  
+
+
 
 
   <!-- .notAvailable or .forbidden -->
@@ -2833,8 +2833,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     <h4> {{objENS.timeRemaining}} </h4>
   </div>
 </article>
- 
-  
+
+
 
   <!-- .open or .auction -->
    <article class="row text-center" ng-show="objENS.status==ensModes.auction || objENS.status==ensModes.open">
@@ -2864,8 +2864,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </section>
 
 </article>
- 
-  
+
+
 
   <!-- .reveal -->
    <article class="row text-center" ng-show="objENS.status==ensModes.reveal">
@@ -2882,8 +2882,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
 </article>
 
- 
-  
+
+
 
   <!-- .owned (finalize) -->
    <article class="row text-center" ng-show="objENS.status==ensModes.owned">
@@ -2936,15 +2936,15 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </tr>
 
   </table>
- 
-    
+
+
   </div>
 
 </article>
 
 
- 
-  
+
+
 
   <!-- Unlock Directive: Everything but notAvailable & forbidden -->
   <article class="row" ng-show="(objENS.status==ensModes.auction || objENS.status==ensModes.open || objENS.status==ensModes.owned || objENS.status==ensModes.reveal)">
@@ -2971,8 +2971,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
         </h4>
       </div>
       <div ng-show="!wd">
-            <wallet-decrypt-drtv></wallet-decrypt-drtv>         
-          
+            <wallet-decrypt-drtv></wallet-decrypt-drtv>
+
       </div>
     </section>
   </article>
@@ -3206,8 +3206,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
   </tbody>
 </table>
- 
-        
+
+
       </div>
       <!-- / After Sent: Place Bid / Start Auction -->
 
@@ -3236,8 +3236,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </article>
 
 </div>
- 
-  
+
+
 
 
    <article class="col-xs-12 col-sm-8 col-sm-offset-2 text-center"
@@ -3300,10 +3300,10 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </section>
 </article>
 <!-- FINALIZE: ENS MODAL -->
- 
 
- 
-  
+
+
+
 
   <!-- .resolve (resolve) -->
    <article class="col-xs-12 col-sm-10 col-sm-offset-1" ng-show="objENS.status==ensModes.owned && objENS.owner==objENS.deedOwner && wd">
@@ -3354,9 +3354,9 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </tr>
 
   </table>
- 
 
-  
+
+
 
 
   <section class="text-center"
@@ -3529,11 +3529,11 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </section>
 </article>
 <!-- Resolve: ENS MODAL -->
- 
 
 
- 
-  
+
+
+
 
 
    <!-- ALL: ENS MODAL -->
@@ -3646,8 +3646,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
   </tbody>
 </table>
- 
-        
+
+
 
         <p> The <strong>{{ajaxReq.type}}</strong> node you are sending through is provided by <strong>{{ajaxReq.service}}</strong>.</p>
 
@@ -3669,10 +3669,10 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 </article>
 <!-- ALL: ENS MODAL -->
 
- 
-  
- 
-    
+
+
+
+
   </div>
   <div ng-if="visibility=='subdomain'">
     <div class="block">
@@ -3682,7 +3682,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           Register Sub Domain
         </h1>
         <p>
-          
+
         </p>
       </article>
       <!-- / ENS Title -->
@@ -3699,7 +3699,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                    ng-model="objSub.name"
                    ng-keyup="$event.keyCode==13"
                    ng-change=""
-                   ng-disabled="objSub.inputDisabled"
+                   ng-disabled=""
                    ng-class="Validator.isValidSubName(objSub.name) && objSub.name.indexOf('.') == -1 ? 'is-valid' : 'is-invalid'"/>
                    <div class="input-group-btn"><button ng-click="checkSubName()" class="btn btn-primary">Check sub domain</button></div>
           </div>
@@ -3722,8 +3722,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
       <article class="row">
         <section class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
           <div>
-            <div class="input-group pad-bot" ng-repeat="data in objSub.validNames track by $index" > 
-            <input class="form-control" type="text" value="{{data.fullName}}" ng-disabled="true"/>
+            <div class="input-group pad-bot" ng-repeat="data in objSub.validNames track by $index" >
+            <input class="form-control" type="text" value="{{data.fullName}}" ng-disabled=""/>
             <div class="input-group-btn"><button ng-show="data.available" ng-click="registerSubName($index)" class="btn btn-primary btn-primary-buy-button">Buy ({{data.EthVal}} ETH)
             </button>
             <button ng-show="!data.available" class="btn btn-primary btn-red" disabled><span class="na">X</span>
@@ -3744,8 +3744,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
         <h5 traslate="SWAP_unlock">Unlock your wallet to buy {{objSub.buy.fullName}} for {{objSub.buy.EthVal}} ETH</h5>
       </div>
       <div ng-show="!wd">
-            <wallet-decrypt-drtv></wallet-decrypt-drtv>         
-          
+            <wallet-decrypt-drtv></wallet-decrypt-drtv>
+
       </div>
     </section>
     <section class="row" ng-show="wallet!=null" ng-controller='sendTxCtrl'>
@@ -3828,7 +3828,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                  class="form-control"
                  placeholder="{{ 'SEND_amount_short' | translate }}"
                  ng-model="tx.value"
-                 ng-disabled="false"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.value) ? 'is-valid' : 'is-invalid'"/>
 
           <div class="input-group-btn">
@@ -3916,7 +3916,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                placeholder="21000"
                ng-model="tx.gasLimit"
                ng-change="gasLimitChanged=true"
-               ng-disabled="false"
+               ng-disabled=""
                ng-class="Validator.isPositiveNumber(tx.gasLimit) ? 'is-valid' : 'is-invalid'" />
       </div>
     </section>
@@ -3949,7 +3949,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                  class="form-control"
                  placeholder="0x6d79657468657277616c6c65742e636f6d20697320746865206265737421"
                  ng-model="tx.data"
-                 ng-disabled="false"
+                 ng-disabled=""
                  ng-class="Validator.isValidHex(tx.data) ? 'is-valid' : 'is-invalid'"/>
 
         </div>
@@ -3975,7 +3975,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                  class="form-control"
                  placeholder="2"
                  ng-model="tx.nonce"
-                 ng-disabled="checkTxReadOnly"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.nonce) ? 'is-valid' : 'is-invalid'" />
 
         </div>
@@ -4000,7 +4000,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                  class="form-control"
                  placeholder="50"
                  ng-model="tx.gasPrice"
-                 ng-disabled="checkTxReadOnly"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.gasPrice) ? 'is-valid' : 'is-invalid'" />
 
         </div>
@@ -4106,8 +4106,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
 </section>
 <!-- / Sidebar -->
- 
-      
+
+
 
        <article class="modal fade" id="sendTransaction" tabindex="-1">
   <section class="modal-dialog">
@@ -4259,8 +4259,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </section>
   </section>
 </article>
- 
-      
+
+
     </section>
   </article>
 
@@ -4294,7 +4294,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                    ng-model="objDomainSale.name"
                    ng-keyup="$event.keyCode==13 && checkName()"
                    ng-change="nameOnChange()"
-                   ng-disabled="objDomainSale.nameReadOnly"
+                   ng-disabled=""
                    ng-class="Validator.isValidENSName(objDomainSale.name) && objDomainSale.name.indexOf('.') == -1 ? 'is-valid' : 'is-invalid'"/>
             <div class="input-group-btn"><a class="btn btn-default">.eth</a></div>
           </div>
@@ -4317,7 +4317,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                    ng-model="objDomainSale.address"
                    ng-keyup="$event.keyCode==13 && checkBalance()"
                    ng-change="addressOnChange()"
-                   ng-disabled="objDomainSale.addressReadOnly"
+                   ng-disabled=""
                    ng-class="Validator.isValidAddress(objDomainSale.address) ? 'is-valid' : 'is-invalid'"/>
           </div>
           <button ng-show="objDomainSale.balance == -1" class="btn btn-primary" ng-click="checkBalance()"> Check DomainSale balance </button>
@@ -4423,8 +4423,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </div>
 
 </article>
- 
-  
+
+
 
   <!-- If not owned then say so -->
    <article class="row text-center" ng-show="objDomainSale.status==domainsaleModes.ineligible">
@@ -4436,8 +4436,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   This domain has not yet been registered in ENS.  You should check it out on the ENS tab to see its status, and bid for it if you want it.
 
 </article>
- 
-  
+
+
 
   <!-- If not owned by DomainSale then provide transfer information -->
    <article class="row text-center" ng-show="objDomainSale.status==domainsaleModes.nottransferred">
@@ -4447,8 +4447,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   <h1><strong>{{objDomainSale.name}}.eth</strong> is not currently for sale.</h1>
 
 </article>
- 
-  
+
+
 
   <!-- If not offered then provide offer information -->
    <article class="row text-center" ng-show="objDomainSale.status==domainsaleModes.notoffered">
@@ -4458,8 +4458,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   <h1><strong>{{objDomainSale.name}}.eth</strong> is ready to be put up for sale.</h1>
 
 </article>
- 
-  
+
+
 
   <!-- If available provide purchase and/or auction information -->
    <article class="row text-center" ng-show="objDomainSale.status==domainsaleModes.available">
@@ -4485,8 +4485,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 </div>
 
 </article>
- 
-  
+
+
 
   <!-- If auction active then provide bid information -->
    <article class="row text-center" ng-show="objDomainSale.status==domainsaleModes.auctioning">
@@ -4506,8 +4506,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </div>
 
 </article>
- 
-  
+
+
 
   <!-- If auction closed then provide finish information -->
    <article class="row text-center" ng-show="objDomainSale.status==domainsaleModes.closed">
@@ -4519,8 +4519,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   The auction for this domain was won by <strong>{{objDomainSale.lastBidder}}</strong> with a bid of <strong>{{objDomainSale.lastBidEth}} {{ajaxReq.type}}</strong>.
 
 </article>
- 
-  
+
+
 
   <!-- If balance available provide balance information -->
    <article class="row text-center" ng-show="objDomainSale.status==-1 && objDomainSale.balance>=0">
@@ -4536,8 +4536,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </div>
 
 </article>
- 
-  
+
+
 
   <!-- Unlock Directive: Everything but ineligible -->
   <article class="row" ng-show="(objDomainSale.balance > 0 || objDomainSale.status==domainsaleModes.nottransferred || objDomainSale.status==domainsaleModes.notoffered || objDomainSale.status==domainsaleModes.available || objDomainSale.status==domainsaleModes.auctioning || objDomainSale.status==domainsaleModes.closed)">
@@ -4558,8 +4558,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
         </h4>
       </div>
       <div ng-show="!wd">
-            <wallet-decrypt-drtv></wallet-decrypt-drtv>         
-          
+            <wallet-decrypt-drtv></wallet-decrypt-drtv>
+
       </div>
     </section>
   </article>
@@ -4631,8 +4631,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </article>
 
 </div>
- 
-  
+
+
 
   <!-- Action: offer or cancel -->
    <div ng-show="objDomainSale.status==domainsaleModes.notoffered && wallet!=null && wallet.getAddressString()!=objDomainSale.seller">
@@ -4807,8 +4807,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </tr>
   </tbody>
 </table>
- 
-        
+
+
       </div>
       <!-- / After Sent -->
 
@@ -4824,8 +4824,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </article>
 
 </div>
- 
-  
+
+
 
   <!-- Action: bid or buy -->
    <div ng-show="(objDomainSale.status==domainsaleModes.available || objDomainSale.status==domainsaleModes.auctioning) && wallet!=null && wallet.getAddressString()!=objDomainSale.seller">
@@ -4945,8 +4945,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </article>
 
 </div>
- 
-  
+
+
 
   <!-- Action: finish -->
    <div ng-show="objDomainSale.status==domainsaleModes.closed && wallet!=null">
@@ -5015,8 +5015,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </article>
 
 </div>
- 
-  
+
+
 
   <!-- Action: withdraw -->
    <div ng-show="objDomainSale.balance>0 && wallet!=null">
@@ -5071,8 +5071,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </article>
 
 </div>
- 
-  
+
+
 
   <!-- Modal: confirm -->
    <!-- ALL: DOMAINSALE MODAL -->
@@ -5126,8 +5126,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </tr>
   </tbody>
 </table>
- 
-        
+
+
 
         <p> The <strong>{{ajaxReq.type}}</strong> node you are sending through is provided by <strong>{{ajaxReq.service}}</strong>.</p>
 
@@ -5149,8 +5149,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 </article>
 <!-- ALL: DOMAINSALE MODAL -->
 
- 
-  
+
+
 </main>
 
 
@@ -5178,7 +5178,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
   <article class="row" ng-show="wallet!=null">
 
-    
+
       <article class="col-sm-8 view-wallet-content">
 
   <section class="block">
@@ -5310,7 +5310,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 <article class="col-sm-4">
   <wallet-balance-drtv></wallet-balance-drtv>
 </article>
-   
+
 
   </article>
 
@@ -5537,8 +5537,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
         </h4>
       </div>
       <div ng-show="!wd">
-            <wallet-decrypt-drtv></wallet-decrypt-drtv>         
-          
+            <wallet-decrypt-drtv></wallet-decrypt-drtv>
+
       </div>
     </section>
   </section>
@@ -5626,7 +5626,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                  class="form-control"
                  placeholder="{{ 'SEND_amount_short' | translate }}"
                  ng-model="tx.value"
-                 ng-disabled="false"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.value) ? 'is-valid' : 'is-invalid'"/>
 
           <div class="input-group-btn">
@@ -5714,7 +5714,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                placeholder="21000"
                ng-model="tx.gasLimit"
                ng-change="gasLimitChanged=true"
-               ng-disabled="false"
+               ng-disabled=""
                ng-class="Validator.isPositiveNumber(tx.gasLimit) ? 'is-valid' : 'is-invalid'" />
       </div>
     </section>
@@ -5747,7 +5747,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                  class="form-control"
                  placeholder="0x6d79657468657277616c6c65742e636f6d20697320746865206265737421"
                  ng-model="tx.data"
-                 ng-disabled="false"
+                 ng-disabled=""
                  ng-class="Validator.isValidHex(tx.data) ? 'is-valid' : 'is-invalid'"/>
 
         </div>
@@ -5773,7 +5773,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                  class="form-control"
                  placeholder="2"
                  ng-model="tx.nonce"
-                 ng-disabled="checkTxReadOnly"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.nonce) ? 'is-valid' : 'is-invalid'" />
 
         </div>
@@ -5798,7 +5798,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                  class="form-control"
                  placeholder="50"
                  ng-model="tx.gasPrice"
-                 ng-disabled="checkTxReadOnly"
+                 ng-disabled=""
                  ng-class="Validator.isPositiveNumber(tx.gasPrice) ? 'is-valid' : 'is-invalid'" />
 
         </div>
@@ -5904,8 +5904,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
 </section>
 <!-- / Sidebar -->
- 
-      
+
+
 
        <article class="modal fade" id="sendTransaction" tabindex="-1">
   <section class="modal-dialog">
@@ -6057,8 +6057,8 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </section>
   </section>
 </article>
- 
-      
+
+
     </div>
     <div class="col-xs-12 block block--danger" ng-show="wallet.getChecksumAddressString()!=txInfo.from">
       <h5 translate="ENS_WrongAddress_2">
